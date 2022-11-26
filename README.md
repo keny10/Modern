@@ -1,4 +1,15 @@
 # Modern
+# Installation
+Download the last release on the right and save the zip file in your Racing League Tool Mods folder
+
+Racingleaguetool/user/mods
+
+Start Racing League Tool theme will be install set as default check options and enjoy !
+
+
+Read the readme file before asking questions !!!!
+
+# Screenshots
 Complete theme for Racing League Tool
 ![f1_season1_lineups](https://user-images.githubusercontent.com/880169/204111027-cf13870f-1bc0-4361-ba17-d7e3f940daaa.png)
 ![f1_season1_driver_standings](https://user-images.githubusercontent.com/880169/204111042-b6be602c-865c-45ef-bc72-659ad43ddf15.png)
