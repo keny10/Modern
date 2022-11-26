@@ -1,0 +1,12 @@
+{
+  "ShowCountryFlagsForDrivers": true,
+  "ShowPenaltyPointsInStandings": true,
+  "ShowWinnerInCalendar": true,
+  "ShowTrackIconInCalendar": true,
+  "ShowCountryFlagsIconInCalendar": true,
+  "RenderReserveDriver": false,
+  "RenderPodiumColors": true,
+  "SeasonFormForDriverPos": 5,
+  "SecondCalendarEventsInColumn": 11,
+  "ReserveDriverMax": 0
+}
