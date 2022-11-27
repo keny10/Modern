@@ -9,6 +9,10 @@ Start Racing League Tool theme will be install set as default check options and 
 
 Read the readme file before asking questions !!!!
 
+# Flags
+If you want to add round flags you need to download them here for free :https://www.freeflagicons.com/buy/round_icon/
+Download 600px one and resize theme to 434px x 434px
+
 # Screenshots
 Complete theme for Racing League Tool
 ![f1_season1_lineups](https://user-images.githubusercontent.com/880169/204111027-cf13870f-1bc0-4361-ba17-d7e3f940daaa.png)
