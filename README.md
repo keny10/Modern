@@ -1,4 +1,7 @@
 # Modern
+v1.1 support custom team in standings and lineup you just need to activate the Not F1 Season Or Custom Teams
+![Capture](https://user-images.githubusercontent.com/880169/204158667-15483779-c2d1-4382-88a7-d197e84baca0.PNG)
+
 # Installation
 Download the last release on the right and save the zip file in your Racing League Tool Mods folder
 
@@ -12,6 +15,7 @@ Read the readme file before asking questions !!!!
 # Flags
 If you want to add round flags you need to download them here for free :https://www.freeflagicons.com/buy/round_icon/
 Download 600px one and resize theme to 434px x 434px
+
 
 # Screenshots
 Complete theme for Racing League Tool
