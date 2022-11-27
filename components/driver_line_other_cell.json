@@ -44,13 +44,14 @@
                             }
                         },
                         {
-                            "BlockType": "image",
+                            "BlockType": "shape",
                             "VerticalAlignment": "Center",
                             "Width": 5,
                             "Height": 40,
                             "Opacity": 100,
-                            "ImageOptions": {
-                                "Path": "images/Modern/Shape/{Item.Team.Name}.png"
+                            "ShapeOptions": {
+                                "Type": "Rectangle",
+                                "Fill": "{Item.Team.Color}"
                             }
                         },
                         //Real name
@@ -139,7 +140,7 @@
                                         {
                                             "Condition": "{Item.IsReserve}",
                                             "Property": "Source",
-                                            "Value": "QRL Racing"
+                                            "Value": "Reserve"
                                         }
                                     ],
                                     "HorizontalAlignment": "Left",

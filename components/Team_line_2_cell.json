@@ -7,6 +7,13 @@
             "BlockType": "dock",
             "Orientation": "Horizontal",
             "BackgroundImage": "images/Modern/Row/{Item.Team.Name}_light.png",
+            "Triggers": [
+                {
+                    "Condition": "{NotF1SeasonOrCustomTeams}",
+                    "Property": "BackgroundImage",
+                    "Value": "images/Modern/Row/reserve_light.png"
+                }
+            ],
             "Width": 575,
             "Height": 86,
             "MarginTop": 0,
@@ -39,6 +46,7 @@
                     "Orientation": "Vertical",
                     "VerticalAlignment": "Center",
                     "Height": 70,
+                    "Width": "330",
                     "Items": [
                         {
                             "BlockType": "stack",
@@ -61,22 +69,43 @@
                 },
                 //points
                 {
-                    "BlockType": "Dock",
+                    "BlockType": "Stack",
                     "Orientation": "Horizontal",
-                    "HorizontalAlignment": "Center",
-                    "MarginLeft":135,
-                    "MarginTop":47,
-                    "TextAlignment": "Center",
+                    "MarginTop":0,
+                    "Width": "*",
                     "Items": [
                         {
                             "BlockType": "text",
+                            "HorizontalAlignment": "Center",
+                            "MarginLeft":0,
+                            "MarginTop": 50,
                             "Orientation": "Horizontal",
                             "Source": "{Item.Points}",
-                            "HorizontalAlignment": "Center",
                             "TextAlignment": "Center",
                             "FontName": "{FontNameBold}",
                             "Foreground": "{ForegroundBlack}",
-                            "FontSize": 25
+                            "FontSize": 22,
+                            "Triggers": [
+                                {
+                                    //not working api must been set to int ! must fixed later
+                                    "Condition": "{Item.Points, Converter=NumberGreater, Parameter=99}",
+                                    "Property": "MarginLeft",
+                                    "Value": "1"
+                                }
+                            ],
+                        },
+                        
+                        //logo
+                        {
+                            "BlockType": "image",
+                            "RenderIf" :"{NotF1SeasonOrCustomTeams}",
+                            "Height": 75,
+                            "MarginTop":5,
+                            "MarginLeft": 25, 
+                            "ImageOptions": {
+                                "Path": "{Item.Team.LogoPath}",
+                                "VerticalAlignment": "Center"
+                            }
                         }
                     ]
                 }

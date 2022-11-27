@@ -10,10 +10,15 @@
                 {
                     "Condition": "{Item.IsReserve}",
                     "Property": "BackgroundImage",
-                    "Value": "images/Modern/Row/qrl_dark.png"
+                    "Value": "images/Modern/Row/reserve_dark.png"
+                },
+                {
+                    "Condition": "{NotF1SeasonOrCustomTeams}",
+                    "Property": "BackgroundImage",
+                    "Value": "images/Modern/Row/reserve_dark.png"
                 }
             ],
-            //"Padding": "5, 25, 20, 5",
+            "Padding": "5, 25, 20, 5",
             "Width": 1170,
             "Height": 172,
             "MarginTop": 0,
@@ -34,7 +39,6 @@
                 },
                 {
                     "BlockType": "shape",
-                    "RenderIf":"{Item.IsReserve}",
                     "VerticalAlignment": "Center",
                     "Width": 10,
                     "Height": 75,
@@ -45,23 +49,13 @@
                     }
                 },
                 {
-                    "BlockType": "image",
-                    "VerticalAlignment": "Center",
-                    "Width": 10,
-                    "Height": 75,
-                    "Opacity": 100,
-                    "ImageOptions": {
-                        "Path": "images/Modern/Shape/{Item.Team.Name}.png"
-                    }
-                },
-                {
                     "BlockType": "stack",
                     "Orientation": "Vertical",
                     //"Background":"#FFFFFF",
                     "HorizontalAlignment": "Left",
                     "VerticalAlignment": "Center",
                     "Height": 150,
-                    "Width": 620,
+                    "Width": "730",
                     "Items": [
                         {
                             "BlockType": "stack",
@@ -159,7 +153,7 @@
                                         {
                                             "Condition": "{Item.IsReserve}",
                                             "Property": "Source",
-                                            "Value": "QRL Racing"
+                                            "Value": "Reserve"
                                         }
                                     ],
                                     "HorizontalAlignment": "Left",
@@ -179,30 +173,50 @@
                                 }
                             ]
                         }
+                        
                     ]
                 },
-                //points
                 {
-                    "BlockType": "Dock",
+                    "BlockType": "Stack",
                     "Orientation": "Horizontal",
-                    "HorizontalAlignment": "Center",
-                    "MarginLeft":270,
-                    "MarginTop":112,
-                    "TextAlignment": "Center",
-                    "Width": 50,
+                    "MarginLeft":20,
+                    "MarginTop":0,
+                    "Width": "*",
+                    "Triggers": [
+                        {
+                            "Condition": "{NotF1SeasonOrCustomTeams}",
+                            "Property": "MarginLeft",
+                            "Value": "0"
+                        }
+                    ],
                     "Items": [
                         {
                             "BlockType": "text",
+                            "HorizontalAlignment": "Center",
+                            "MarginTop": 110,
                             "Orientation": "Horizontal",
                             "Source": "{Item.Points}",
-                            "HorizontalAlignment": "Center",
                             "TextAlignment": "Center",
                             "FontName": "{FontNameBold}",
                             "Foreground": "{ForegroundBlack}",
                             "FontSize": 35
+                        },
+                        
+                        //logo
+                        {
+                            "BlockType": "image",
+                            "RenderIf" :"{NotF1SeasonOrCustomTeams}",
+                            "Height": 180,
+                            "MarginTop":-15,
+                            "MarginLeft": 35, 
+                            "ImageOptions": {
+                                "Path": "{Item.Team.LogoPath}",
+                                "VerticalAlignment": "Center"
+                            }
                         }
                     ]
                 }
+                
             ]
         }
     ]
