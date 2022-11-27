@@ -20,6 +20,7 @@ Read the readme file before asking questions !!!!
 # Flags
 If you want to add round flags you need to download them here for free :https://www.freeflagicons.com/buy/round_icon/
 Download 600px one and resize theme to 434px x 434px
+Name them according to country database !
 
 
 # Screenshots
