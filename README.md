@@ -1,5 +1,6 @@
 # Modern
-v1.1 support custom team in standings and lineup you just need to activate the Not F1 Season Or Custom Teams
+v1.1 support custom teams in standings and lineup you just need to activate the Not F1 Season Or Custom Teams
+
 ![Capture](https://user-images.githubusercontent.com/880169/204158667-15483779-c2d1-4382-88a7-d197e84baca0.PNG)
 
 # Installation
