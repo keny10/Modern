@@ -7,7 +7,6 @@
   "ShowCountryFlagsIconInCalendar": true,
   "RenderReserveDriver": false,
   "RenderPodiumColors": true,
-  "SeasonFormForDriverPos": 5,
   "SecondCalendarEventsInColumn": 11,
   "ReserveDriverMax": 0
 }
