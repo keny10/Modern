@@ -301,13 +301,128 @@
 
         //tyres
         {
-            "BlockType": "image",
-            "MarginLeft" : 12,
-            "MarginRight" : 0,            
+            "BlockType": "stack",
+            "Padding": "0,0",
+            "RenderIf": false,
+            "Width": "*",
+            "Height": "*",
             "Source": "<{data.Tyres, Converter=StringFormatReverse, Parameter=tyres_SUB.png}>",
-            "VerticalAlignment" : "Center",
-            "HorizontalAlignment": "Right",
-            "Height" : 34                                        
-        }
+            "VerticalAlignment": "Center",
+            "HorizontalAlignment": "Center",
+            "Background": "{BackgroundDefault}",
+            "Triggers": [
+                {
+                    "Condition": "<{data.Type, Converter=EnumEquals, Parameter=Tyres}>",
+                    "Setters": [
+                        {
+                            "Property": "RenderIf",
+                            "Value": true
+                        }
+                    ]
+                }
+            ],
+            "Items": [
+                {
+                    "BlockType": "image",
+                    "Source": "<{data.Tyres, Converter=StringFormatReverse, Parameter=tyres_SUB.png}>",
+                    "VerticalAlignment": "Center",
+                    "HorizontalAlignment": "Center",
+                    "Height": 38
+                },
+                {
+                    "BlockType": "text",
+                    "MarginLeft": 4,
+                    "Source": "<{data.Value}>",
+                    "HorizontalAlignment": "Center",
+                    "VerticalAlignment": "Center",
+                    "TextOptions": {
+                        "FontName": "{FontNameDefault}",
+                        "FontSize": 19,
+                        "HorizontalAlignment": "Center"
+                    }
+                }
+            ]
+        },
+        //driver short
+        {
+            "BlockType": "dock",
+            "RenderIf": false,
+            "Width": "*",
+            "Height": "*",
+            "Padding": "12, 0",
+            "Background": "{BackgroundDefault}",
+            "VerticalAlignment": "Center",
+            "Triggers": [
+                {
+                    "Condition": "<{data.Type, Converter=EnumEquals, Parameter=DriverCompact}>",
+                    "Setters": [
+                        {
+                            "Property": "RenderIf",
+                            "Value": true
+                        }
+                    ]
+                }
+            ],
+            "Items": [
+                //left part
+                {
+                    "BlockType": "stack",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "Items": [
+                        // //flag
+                        // {
+                        //     "BlockType": "image",
+                        //     "Height": 48,
+                        //     "MarginRight": 12,
+                        //     "VerticalAlignment": "Center",
+                        //     "ImageOptions": {
+                        //         "Path": "<{data.RawValue.LogoPath}>",
+                        //         "VerticalAlignment": "Center"
+                        //     }
+                        // },        
+                        //name
+                        {
+                            "BlockType": "text",
+                            "MaxWidth": 400,
+                            "MarginLeft": 8,
+                            "Source": "<{data.RawValue.Name}>",
+                            "HorizontalAlignment": "Left",
+                            "VerticalAlignment": "Center",
+                            "FontName": "{FontNameDefault}",
+                            "FontSize": 40
+                        }
+                    ]
+                },
+                //right part
+                {
+                    "BlockType": "stack",
+                    "Height": "*",
+                    "MarginLeft": 64,
+                    "HorizontalAlignment": "Right",
+                    "VerticalAlignment": "Center",
+                    "Items": [
+                        {
+                            "BlockType": "stack",
+                            "VerticalAlignment": "Center",
+                            "Spacing": 8,
+                            "Items": [
+                                // //logo
+                                // {
+                                //     "BlockType": "image",
+                                //     "Height": 40,
+                                //     "MarginRight": 0,
+                                //     "VerticalAlignment": "Center",
+                                //     "ImageOptions": {
+                                //         "Path": "<{data.RawValue.TeamCarLogoPath}>",
+                                //         "VerticalAlignment": "Center"
+                                //     }
+                                // }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 }
