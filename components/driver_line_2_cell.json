@@ -77,18 +77,6 @@
                                         "Path": "images/Clear.png",
                                         "VerticalAlignment": "Center"
                                     }
-                                },
-                                //flag
-                                {
-                                    "BlockType": "image",
-                                    "RenderIf":"{ShowCountryFlagsForDrivers}",
-                                    "Height": 22,
-                                    "MarginLeft": 5,
-                                    "VerticalAlignment": "Center",
-                                    "ImageOptions": {
-                                        "Path": "{Item.Driver.Nationality.LogoPath}",
-                                        "VerticalAlignment": "Center"
-                                    }
                                 }
                             ]
                         },
@@ -106,6 +94,18 @@
                                     "FontName": "{FontNameBold}",
                                     "Foreground": "{ForegroundBlack}",
                                     "FontSize": 22
+                                },
+                                //flag
+                                {
+                                    "BlockType": "image",
+                                    "RenderIf":"{ShowCountryFlagsForDrivers}",
+                                    "Height": 22,
+                                    "MarginLeft": 5,
+                                    "VerticalAlignment": "Center",
+                                    "ImageOptions": {
+                                        "Path": "{Item.Driver.Nationality.LogoPath}",
+                                        "VerticalAlignment": "Center"
+                                    }
                                 },
                                 //icon badges
                                 {
