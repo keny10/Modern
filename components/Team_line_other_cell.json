@@ -31,15 +31,26 @@
                             "Foreground": "{ForegroundBlack}",
                             "FontSize": 20
                         },
+                        //right part
                         {
-                            "BlockType": "image",
+                            "BlockType": "stack",
+                            "MarginRight": 16,
+                            "HorizontalAlignment": "Right",
                             "VerticalAlignment": "Center",
-                            "Width": 5,
-                            "Height": 40,
-                            "Opacity": 100,
-                            "ImageOptions": {
-                                "Path": "images/Modern/Shape/{Item.Team.Name}.png"
-                            }
+                            "Items": [
+                                //color
+                                {
+                                    "BlockType": "shape",
+                                    "VerticalAlignment": "Center",
+                                    "Width": 6,
+                                    "Height": 42,
+                                    "Opacity": 100,
+                                    "ShapeOptions": {
+                                        "Type": "Rectangle",
+                                        "Fill": "{Item.Team.Color}"
+                                    }
+                                }
+                            ]
                         },
                         // name
                         {
