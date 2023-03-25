@@ -93,5 +93,23 @@
     "Duration": "Durée",
     "Hot duration": "Durée (intense)",
     "Defense rating": "Cote de defense",
-    "Attack rating": "Cote d'attaque"
+    "Attack rating": "Cote d'attaque",
+    "From" : "De",
+    "To" : "À",
+    "The Team Manager" : "Au directeur de l'équipe",
+    "The Stewards, having recieved an incident submital, have considered the following matter and determine the following:" : "Les comissaires, ayant reçu une soumission d'incident, ont examiné la question suivante et ont déterminé ce qui suit:",
+    "No / Driver" : "No / Pilote",
+    "Competitor" : "Compétiteur",
+    "Offence" : "Infraction",
+    "involving driver(s)" : "impliquant le(s) pilote(s)",
+    "in turn" : "courbe numéro",
+    "on lap" : "au tour",
+    "Decision" : "Décision",
+    "sec. time penalty" : "sec. pénalité de temps",
+    "position grid drop" : "pertw de place sur la grille",
+    "penalty point(s)" : "point(s) de pénalité",
+    "warning(s)" : "avertissement(s)",
+    "No Further Action" : "aucne autre action",
+    "Verdict" : "Verdique"
+    
 }   
