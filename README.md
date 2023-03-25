@@ -1,6 +1,9 @@
 # Winner of theme contest 2022 !!
 
 # Modern
+
+Penalyty design all code came from : Hines J thanks to him !
+Find his lastest code here : https://github.com/jdhine02/FIA-Penalty-Render
 v1.1 support custom teams in standings and lineup you just need to activate the Not F1 Season Or Custom Teams
 
 Know bugs :
