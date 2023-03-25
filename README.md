@@ -2,7 +2,7 @@
 
 # Modern
 
-Penalyty design all code came from : Hines J thanks to him !
+Penalty design all code came from : Hines J thanks to him !
 Find his lastest code here : https://github.com/jdhine02/FIA-Penalty-Render
 
 
