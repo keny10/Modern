@@ -52,7 +52,20 @@
     "SeasonProgressPositionTop1Foregound" : "#DDDD11",
     "SeasonProgressPointsForeground" : "#AFAFAF",
     "SeasonProgressPointsZeroForeground" : "#666666",
-    "SeasonProgressPointsTopForeground" : "#C2C2C2"
+    "SeasonProgressPointsTopForeground" : "#C2C2C2",
+
+    //FIA text
+    "FIAFontSize": "28",
+    "FIAText": "#000000",
+    "FIALine": "#000000",
+    "FIAGrandPrix": "#000000",
+    "FIAMarginDetailsArea": "50,0,50,0",
+    "FIALeftBlockWidth" : "290",
+    "FIARightBlockWidth" : "1500",
+    "FIAFont": "Formula1-Regular",
+    "FIAFontWide": "Formula1-Bold",
+    "PenaltySeparator": "#000000",
+    "FIABGColor" : "#FFFFFF"
 
 
 
