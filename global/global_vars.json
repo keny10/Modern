@@ -65,7 +65,19 @@
     "FIAFont": "Formula1-Regular",
     "FIAFontWide": "Formula1-Bold",
     "PenaltySeparator": "#000000",
-    "FIABGColor" : "#FFFFFF"
+    "FIABGColor" : "#FFFFFF",
+
+    "ComparisonCellWidth" : "280",
+    "ComparisonCell": "225",
+    "ComparisonCellHeight" : "73",
+    "ComparisonFontSize" : "25",
+    "ComparisonTitleSize" : "25",
+    "ComparisonNumberSize" : "40",
+    "FontSizeRightPart" : "30",
+    "ComparisonSpacingMid" : "75",
+    "ComparisonSpacing" : "25",
+    "ComparisonColorText1": "#FFFFFF",
+    "ComparisonColorText2": "#000000"
 
 
 

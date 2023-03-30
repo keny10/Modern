@@ -7,10 +7,11 @@
   "ShowCountryFlagsIconInCalendar": true,
   "RenderReserveDriver": false,
   "RenderPodiumColors": true,
-  "RenderPenaltySeparator": true,
+  "RenderPenaltySeparator": false,
   "RenderPenaltyVerdict": true,
   "SeasonFormForDriverPos": 5,
   "SecondCalendarEventsInColumn": 12,
   "ReserveDriverMax": 0,
+  "TeamNumberToCompare": 9,
   "StewardReportType": "Report"
 }
