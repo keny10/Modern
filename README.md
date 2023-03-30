@@ -1,10 +1,17 @@
 # Winner of theme contest 2022 !!
 
 # Modern
+V1.2
 
 Penalty design all code came from : Hines J thanks to him !
 Find his lastest code here : https://github.com/jdhine02/FIA-Penalty-Render
 
+![penalties](https://user-images.githubusercontent.com/880169/228904562-e3624ec6-b60a-443f-8b7d-898aa9b8836b.png)
+
+Teamate comparison thanks to Kaac for his code !
+
+
+![f1_season1_team_standings](https://user-images.githubusercontent.com/880169/228904826-b50e3491-835d-4f20-bfd6-b5aa05fd944a.png)
 
 v1.1 
 
