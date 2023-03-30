@@ -29,7 +29,7 @@
                                     {
                                         "Name":"LeagueLogo",
                                         "BlockType":"image",
-                                        "Height":200,
+                                        "Height":80,
                                         "Width":"auto",
                                         "HorizontalAlignment" : "Center",
                                         "Source": "{Season.LeagueInfo.LeagueLogo}",
