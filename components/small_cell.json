@@ -55,6 +55,24 @@
                             "Value": "{SeasonProgressPositionTop1Foregound}"
                         }
                     ]
+                },
+                {
+                    "Condition": "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                    "Setters": [
+                        {
+                            "Property": "Foreground",
+                            "Value": "{SeasonProgressPositionTop2Foregound}"
+                        }
+                    ]
+                },
+                {
+                    "Condition": "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                    "Setters": [
+                        {
+                            "Property": "Foreground",
+                            "Value": "{SeasonProgressPositionTop3Foregound}"
+                        }
+                    ]
                 }
             ]
         }
