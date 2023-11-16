@@ -6,15 +6,8 @@
             "BlockType": "dock",
             "Orientation": "Horizontal",
             "BackgroundImage": "images/Modern/Row/{Item.Team.Name}_dark.png",
-            "Triggers": [
-                {
-                    "Condition": "{NotF1SeasonOrCustomTeams}",
-                    "Property": "BackgroundImage",
-                    "Value": "images/Modern/Row/reserve_dark.png"
-                }
-            ],
             //"Padding": "5, 25, 20, 5",
-            "Width": 1180,
+            "Width": 1170,
             "Height": 172,
             "MarginTop": 0,
             "MarginBottom": 5,
@@ -33,14 +26,13 @@
                     "FontSize": 42
                 },
                 {
-                    "BlockType": "shape",
+                    "BlockType": "image",
                     "VerticalAlignment": "Center",
                     "Width": 10,
                     "Height": 75,
                     "Opacity": 100,
-                    "ShapeOptions": {
-                        "Type": "Rectangle",
-                        "Fill": "{Item.Team.Color}"
+                    "ImageOptions": {
+                        "Path": "images/Modern/Shape/{Item.Team.Name}.png"
                     }
                 },
                 {
@@ -49,7 +41,7 @@
                     "HorizontalAlignment": "Left",
                     "VerticalAlignment": "Center",
                     "Height": 150,
-                    "Width": "730",
+                    "Width": 620,
                     "Items": [
                         {
                             "BlockType": "stack",
@@ -74,7 +66,7 @@
                                     "MarginTop": 20,
                                     "VerticalAlignment": "Center",
                                     "ImageOptions": {
-                                        "Path": "{Item.Team.LogoPath}",
+                                        //"Path": "{Item.Team.LogoPath}",
                                         "VerticalAlignment": "Center"
                                     }
                                 }
@@ -84,42 +76,23 @@
                 },
                 //points
                 {
-                    "BlockType": "Stack",
+                    "BlockType": "Dock",
                     "Orientation": "Horizontal",
-                    "MarginLeft":20,
-                    "MarginTop":0,
-                    "Width": "*",
-                    "Triggers": [
-                        {
-                            "Condition": "{NotF1SeasonOrCustomTeams}",
-                            "Property": "MarginLeft",
-                            "Value": "10"
-                        }
-                    ],
+                    "HorizontalAlignment": "Center",
+                    "MarginLeft": 270,
+                    "MarginTop": 112,
+                    "TextAlignment": "Center",
+                    "Width": 50,
                     "Items": [
                         {
                             "BlockType": "text",
-                            "HorizontalAlignment": "Center",
-                            "MarginTop": 110,
                             "Orientation": "Horizontal",
                             "Source": "{Item.Points}",
+                            "HorizontalAlignment": "Center",
                             "TextAlignment": "Center",
                             "FontName": "{FontNameBold}",
                             "Foreground": "{ForegroundBlack}",
                             "FontSize": 35
-                        },
-                        
-                        //logo
-                        {
-                            "BlockType": "image",
-                            "RenderIf" :"{NotF1SeasonOrCustomTeams}",
-                            "Height": 180,
-                            "MarginTop":-15,
-                            "MarginLeft": 35, 
-                            "ImageOptions": {
-                                "Path": "{Item.Team.LogoPath}",
-                                "VerticalAlignment": "Center"
-                            }
                         }
                     ]
                 }
