@@ -129,7 +129,7 @@
                             "FontName": "{FontNameDefault}",
                             "MarginTop": 14,
                             "FontSize": 16,
-                            "Source": "{Item.Track.CircuitFullName, converter=StringToUpperString}"
+                            "Source": "{Item.Track.CircuitFullName, converter=TruncateString, Parameter=35}"
                         },
                         {
                             "BlockType": "dock",
